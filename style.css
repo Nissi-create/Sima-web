@@ -67,5 +67,107 @@ main {
     padding: 16px;
 }
 img{
-    width: 25%;
+    display: block;
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px
+}
+section {
+    margin-bottom: 40px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(245, 248, 194, 0.527);
+    padding: 24px;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+    gap: 50px;
+    margin-top: 40px;
+}
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(12, 14, 1, 0.185);
+    padding: 10px 8px 10px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+.product-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(22, 1, 19, 0.473);
+}
+.product-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(15, 1, 15, 0.377);
+    background: #f4f8fb;
+}
+h2 {
+    text-align:center;
+    letter-spacing:0px;
+    color: #c456a8;
+    font-family:'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    text-align:center;
+    font-style:italic;
+    color:#444;
+
+}
+.product-card h3 {
+    margin: 0.5rem 0 0.2rem 0;
+    color: #ad9ce9;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+.price {
+    color: #ba5ecc;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.desc {
+    font-size: 16px;
+    color: #313131;
+    text-align: center;
+    margin-bottom: 5px;
+    min-height: 0px;
+}
+.buy-btn {
+    background: linear-gradient(90deg, #c490d1 60%, #c992b6 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: 100;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(215, 150, 228, 0.945);
+    transition: background 0.2s, transform 0.2s;
+}
+.buy-btn:hover {
+    background: linear-gradient(to right, #c06ba4 60%, #b072c0 90%);
+    transform: scale(1.05);
+}
+footer {
+    background: #ffee93;
+    color: #8d7d71;
+    text-align: center;
+    padding: 16px 0;
+    letter-spacing: 1px;
+    margin-top: 32px;
 }
