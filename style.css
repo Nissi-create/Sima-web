@@ -3,10 +3,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f4f8fb;
-    color: #222;
+    color: #080808;
 }
 header {
-    background: #ffee93;
+    background: #f5d5f3;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -28,7 +28,7 @@ nav {
 .logo {
     font-weight: bold;
     font-size: 16px;
-    color: #a0ced9;
+    color: #f7f59a;
     letter-spacing: 1px;
 }
 .nav-links {
@@ -65,6 +65,27 @@ main {
     max-width: 1100px;
     margin: 32px auto;
     padding: 16px;
+}
+
+.product-btn{
+    display: block;
+    margin: 20px auto;
+    border: none;
+    background: #e9d5e2;
+    color: #080808;
+    border-radius: 1000px;
+    padding: 19px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: fit-content;
+    transition: background 0.2s;
+}
+.product-btn:hover {
+    background: #d1b7c9;
 }
 img{
     display: block;
@@ -113,22 +134,20 @@ section {
     background: #f4f8fb;
 }
 h2 {
-    text-align:center;
-    letter-spacing:0px;
+    text-align: center;
     color: #c456a8;
     font-family:'Fira Code', Consolas, 'Courier New', monospace;
     font-size: 20px;
     font-weight: 600;
-    text-align: center;
 }
 p{
-    text-align:center;
-    font-style:italic;
-    color:#444;
+    text-align: center;
+    font-style: italic;
+    color: #444;
 
 }
 .product-card h3 {
-    margin: 0.5rem 0 0.2rem 0;
+    margin: 10px;
     color: #ad9ce9;
     font-size: 1.1rem;
     font-weight: 600;
@@ -163,11 +182,82 @@ p{
     background: linear-gradient(to right, #c06ba4 60%, #b072c0 90%);
     transform: scale(1.05);
 }
+#contact {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 28px 100px;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: 0 2px 12px #e5e5e5;
+}
+.contact-title {
+    text-align: center;
+    color: #b55fa2;
+    letter-spacing: 19px;
+    margin-bottom: 15px;
+}
+.contact-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    margin-bottom: 30px;
+}
+.contact-flex {
+    display: flex;
+    justify-content: center;
+}
+.contact-info {
+    flex: 1;
+    font-size: 15px;
+    color: #444;
+    padding-top: 10px;
+}
+.contact-form {
+    flex: 1;
+    padding: 10px 20px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #222;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 14px;
+}
+.contact-form button {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: #b55fa2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+.contact-form button:hover {
+    background: #8c3e7c;
+}
 footer {
-    background: #ffee93;
+    background: #f5d5f3;
     color: #8d7d71;
     text-align: center;
     padding: 16px 0;
     letter-spacing: 1px;
     margin-top: 32px;
+}
+footer.medsos{
+    text-align: center;
+    padding-top: 10px;
+}
+footer .medsos a{
+    font-size: 36px;
+    padding: 5px 20px;
 }
